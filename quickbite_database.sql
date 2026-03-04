@@ -334,7 +334,7 @@ INSERT INTO `inventory` (`product_id`, `quantity`, `low_stock_alert`) VALUES
 (6, 150, 30);
 
 -- Insert Orders
-INSERT INTO `orders` (`id`, `order_number`, `customer_id`, `vendor_id`, `delivery_id`, `total_amount`, `commission_amount`, `delivery_fee`, `payment_status`, `order_status`, `delivery_address`, `latitude`, `longitude`) VALUES
+INSERT INTO `orders` (`id`, `order_number`, `customer_id`, `vendor_id`, `delivery_id`, `total_amount`, `commission_amount`, `delivery_fee`, `payment_status`, `order_status`, `delivery_address`, `latitude`, `longitude`, `created_at`) VALUES
 (1, 'QB20240001', 2, 1, 5, 550.00, 82.50, 50.00, 'paid', 'delivered', '789 Customer Street, Dhaka', 23.7925, 90.4078, NOW() - INTERVAL 2 DAY),
 (2, 'QB20240002', 6, 2, 5, 470.00, 56.40, 50.00, 'paid', 'on_the_way', '321 Buyer Road, Dhaka', 23.8000, 90.4200, NOW() - INTERVAL 1 HOUR);
 
